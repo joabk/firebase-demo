@@ -9,6 +9,8 @@ import { AngularFireDatabase } from 'angularfire2/database';
 export class AppComponent  {
   name = 'Angular';
   constructor(db: AngularFireDatabase){
+    db.list('/tuckshop').valueChanges()
+      .subscribe()
 
   }
 }
