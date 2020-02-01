@@ -10,7 +10,10 @@ export class AppComponent  {
   name = 'Angular';
   constructor(db: AngularFireDatabase){
     db.list('/tuckshop').valueChanges()
-      .subscribe()
+      .subscribe(list=>{
+        alert(233);
+        console.log(list);
+      })
 
   }
 }
