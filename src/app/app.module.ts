@@ -17,7 +17,7 @@ import { appConfig } from './configs/config.ts'
     FormsModule,
     //AngularFirestoreModule,
     AngularFireModule.initializeApp(
-      appConfig.firestore
+      appConfig.firestoreLogin
     ),
     AngularFireDatabaseModule
   ],
